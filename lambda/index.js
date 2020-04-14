@@ -7,11 +7,12 @@ let {
     ENS_REGISTRY_ADDRESS,
     ENS_PUBLIC_RESOLVER_MAINNET,
     DOMAIN,
-    verifyMessage
+    verifyMessage,
+    ensABI
 } = require("./utils")
 
 
-let FROM_BLOCK = parseInt(process.env.FROM_BLOCK) || 9864750
+let FROM_BLOCK = parseInt(process.env.FROM_BLOCK) || 9864750 // a recent mainnet block
 exports.handler = async (ev) => {
 
     if (ev.httpMethod === 'GET') {

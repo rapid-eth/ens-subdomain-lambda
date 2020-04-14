@@ -51,5 +51,6 @@ module.exports = {
     ENS_REGISTRY_ADDRESS,
     ENS_PUBLIC_RESOLVER_MAINNET,
     DOMAIN,
-    verifyMessage
+    verifyMessage,
+    ensABI
 }
